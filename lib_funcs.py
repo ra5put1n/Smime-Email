@@ -57,9 +57,6 @@ def mail_sender(conn,addr):
 	reciever = conn.recv(1024).decode()
 	# print(sender, reciever)
 	filename = reciever+"/"+sender+".txt"
-	if not os.path.exists(filename):
-		conn.send("False".encode())
-		return
 	f = open(filename,'rb')
 	conn.send(f.read())
 

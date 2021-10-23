@@ -108,10 +108,6 @@ def recv_mail():
 	conn.send(sender.encode())
 	conn.recv(1024)
 	conn.send(reciever.encode())
-	if conn.recv(1024).decode() == "False":
-		print("No mails!")
-		conn.close()
-		return
 	#gets public key of sender
 	get_key(sender)
 	pub_key_file = sender + '.pem'
