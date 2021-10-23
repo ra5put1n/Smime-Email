@@ -149,8 +149,7 @@ def main():
 	elif ch == '2':
 		send_mail()
 	elif ch == '3':
-		# recv_mail()
-		pass
+		recv_mail()
 	else:
 		print("Invalid choice")
 		
