@@ -11,7 +11,7 @@ from Crypto.Util.Padding import pad,unpad
 from os.path import exists
 
 
-HOST = "127.0.0.1"
+HOST = "10.138.0.3"
 SEND_PORT = 6901
 RECV_PORT = 6902
 PKI_ENTRY_PORT = 6903
