@@ -30,9 +30,9 @@ def get_key(username):
 		print("User does not exist.")
 		sys.exit()
 	conn.close()
-	# f = open(username+".pem",'wb')
-	# f.write(pub_key.export_key('PEM'))
-	# f.close()
+	f = open(username+".pem",'wb')
+	f.write(pub_key.export_key('PEM'))
+	f.close()
 
 
 def make_priv_pub_key(username):
