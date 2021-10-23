@@ -59,6 +59,7 @@ def mail_sender(conn,addr):
 	filename = reciever+"/"+sender+".txt"
 	f = open(filename,'rb')
 	conn.send(f.read())
+	os.system("rm "+filename)
 
 
 
