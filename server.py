@@ -37,7 +37,7 @@ def pki_make_entry():
 	sock = socket.socket()
 	port = 6903
 	sock.bind(('', port))
-	print("Auth Listener waiting for connections")
+	print("PKI reciever waiting for connections")
 	while True:
 		sock.listen(5)    
 		conn, addr = sock.accept()
@@ -48,7 +48,7 @@ def pki_listener():
 	sock = socket.socket()
 	port = 6904
 	sock.bind(('', port))
-	print("Auth Listener waiting for connections")
+	print("PKI sender waiting for connections")
 	while True:
 		sock.listen(5)    
 		conn, addr = sock.accept()
